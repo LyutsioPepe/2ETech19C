@@ -1,0 +1,158 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace projektwszystko
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Zad 1 --------------------------------------------
+            /*
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+
+            if((a + b) %2 == 0)
+            {
+                Console.WriteLine("TAK");
+            }
+            else
+            {
+                Console.WriteLine("NIE");
+            }
+            */
+
+            // Zad 2 --------------------------------------------
+            /*
+            int a = int.Parse(Console.ReadLine());
+            int g = int.Parse(Console.ReadLine());
+
+            if(((a + g) / 2) > Math.Sqrt(a + g))
+            {
+                Console.WriteLine("TAK");
+            }
+            else
+            {
+                Console.WriteLine("NIE");
+            }
+            */
+
+            // Zad 3 --------------------------------------------
+            /*
+            int k = int.Parse(Console.ReadLine());
+            int l = int.Parse(Console.ReadLine());
+            int m = int.Parse(Console.ReadLine());
+
+            if(k == l || l == m || k == m)
+            {
+                if(k == m && k != l)
+                {
+                    Console.WriteLine($"TAK, i sa to {k} i {m}");
+                }
+
+                if (l == m && l != k)
+                {
+                    Console.WriteLine($"TAK, i sa to {l} i {m}");
+                }
+
+                if (k == l && k != m)
+                {
+                    Console.WriteLine($"TAK, i sa to {k} i {l}");
+                }
+
+                if (k == m && m == l)
+                {
+                    Console.WriteLine($"NIE, wszytskie liczby sa równe");
+                }
+            }
+            else
+            {
+                Console.WriteLine("NIE");
+            }
+            */
+
+            // Zad 4 --------------------------------------------
+            /*
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            int d = int.Parse(Console.ReadLine());
+
+            if(a < b && a < c && a < d)
+            {
+                Console.WriteLine($"najmniejsza z nich to {a}");
+            }
+
+            if (b < a && b < c && b < d)
+            {
+                Console.WriteLine($"najmniejsza z nich to {b}");
+            }
+
+            if (c < b && c < a && c < d)
+            {
+                Console.WriteLine($"najmniejsza z nich to {c}");
+            }
+
+            if (d < b && d < c && d < a)
+            {
+                Console.WriteLine($"najmniejsza z nich to {d}");
+            }
+            */
+
+            // Zad 5 --------------------------------------------
+            /*
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+
+            if(a < (b + c) && b < (a + c) && c < (a + b) && a > (b - c) && b > (a - c) && c > (a - b))
+            {
+                Console.WriteLine("TAK");
+            }
+            else
+            {
+                Console.WriteLine("NIE");
+            }
+            */
+
+            // Zad 6 --------------------------------------------
+            /*
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+
+            if (a < (b + c) && b < (a + c) && c < (a + b) && a > (b - c) && b > (a - c) && c > (a - b))
+            {
+                // tutaj powinno byc wiecj opcji ogolnie ale jesli zalozymy ze "c" jest najwieksze to sie zgadza
+                if (a * a + b * b == c * c)
+                {
+                    Console.WriteLine("prostokątny");
+                }
+                
+                else if (a * a + b * b > c * c)
+                {
+                    Console.WriteLine("ostrokątny");
+                }
+
+                else
+                {
+                    Console.WriteLine("rozwartokątny");
+                }
+                
+            }
+            else
+            {
+                Console.WriteLine("nie da się zbudować trójkąta");
+            }
+            */
+
+            Console.ReadKey();
+        }
+    }
+}
