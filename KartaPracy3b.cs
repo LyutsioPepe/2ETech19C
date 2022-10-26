@@ -127,12 +127,6 @@ namespace ConsoleApp1
             }
             Console.WriteLine($"suma = {suma}");
             */
-
-            /*int i = 1;
-            while (i <= 1000)*/
-            {
-
-            }
         }
     }
 }
