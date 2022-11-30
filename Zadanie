@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp16
+{
+    class Accont
+    {
+        private string emailAddress;
+        private string name;
+        public string getEmailAddress()
+        {
+            return emailAddress;
+        }
+        public string getName()
+        {
+            return name;
+        }
+        public void setEmailAddress(string emailAddress)
+        {
+            return;
+        }
+        public void setName(string name)
+        {
+            return;
+        }
+    }
+    class Contact
+    {
+        private string emailAddress;
+        private string faxNumber;
+        private string name;
+        private string primaryContactMethod;
+        public string getEmailAddress()
+        {
+            return emailAddress;
+        }
+        public string getFaxNumber()
+        {
+            return faxNumber;
+        }
+        public string getName()
+        {
+            return name;
+        }
+        public string getprimaryContactMethod()
+        {
+            return primaryContactMethod;
+        }
+        public void setEmailAddress(string aemailAddress)
+        {
+            this.emailAddress = aemailAddress;   
+        }
+        public void setFaxNumber(string afaxNumber)
+        {
+            this.faxNumber = afaxNumber;
+        }
+        public void setName(string aname)
+        {
+            this.name = aname;
+        }
+        public void setprimaryContactMethod(string aprimaryContactMethod)
+        {
+            this.primaryContactMethod = aprimaryContactMethod;
+        }
+    }
+    class AddressBook
+    {
+        private string name;
+        private Contact contact;
+        public void getContact()
+        {
+            return;
+        }
+        public void getContacts()
+        {
+
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+    }
+}
