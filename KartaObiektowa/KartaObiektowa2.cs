@@ -24,7 +24,7 @@ namespace ConsoleApp1
     {
       Console.WriteLine("płynne...?")
     }
-    public void Produkt(nazwa, cena, opis)
+    public void Produkt(string nazwa, double cena, string opis)
     {
       Console.WriteLine("Mleko")
     }
