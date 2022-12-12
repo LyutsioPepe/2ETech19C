@@ -39,7 +39,7 @@ namespace ConsoleApp1
 		{
 			return typ;
 		}
-		public string getCena()
+		public double getCena()
 		{
 			return cena;
 		}
