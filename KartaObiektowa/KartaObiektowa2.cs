@@ -14,19 +14,21 @@ namespace ConsoleApp1
     public string opis;
     public void getNazwa() 
     {
-      Console.WriteLine("Milk")
+      return nazwa;
     }
     public void getcena() 
     {
-      Console.WriteLine("4.80")
+      return cena;
     }
     public void getOpis() 
     {
-      Console.WriteLine("płynne...?")
+      return opis;
     }
     public void Produkt(string nazwa, double cena, string opis)
     {
-      Console.WriteLine("Mleko")
+      this.nazwa = nazwa;
+      this.cena = cena;
+      this.opis = opis;
     }
   }
 
@@ -40,7 +42,11 @@ namespace ConsoleApp1
     }
     public void getNazwisko()
     {
-      Console.WriteLine("Gryczman")
+      Console.WriteLine("Grycman")
+    }
+    public void setNazwisko(string anazwisko)
+    {
+      this.nazwisko = anazwisko;
     }
   }
 
@@ -60,12 +66,21 @@ namespace ConsoleApp1
     public Produkt produkt;
     public Uzytkownik uzytkownik;
     public int getId()
-    {
-		return id;
-    }
-    public void operation() {
-      Console.WriteLine("operacja plastyczna")
-    }
+        {
+            return id;
+        }
+        public void operation()
+        {
+            Console.WriteLine("operacja demokracja");
+        }
+        public Koszyk(Produkt aprodukt)
+        {
+            this.produkt = aprodukt;
+        }
+        public void setUzytkownik(Uzytkownik auzytkownik)
+        {
+            this.uzytkownik = auzytkownik;
+        }
   }
 
   
@@ -73,7 +88,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            
+            Profil prof1 = new Profil();
+            Uzytkownik u1 = new Uzytkownik(prof1);
+            u1.loguj();
+            prof1.setNazwisko(" ");
+            Produkt prod1 = new Produkt("mleko", 4.80, "płynne...?");
+            Koszyk k1 = new Koszyk(prod1);
         }
     }
 }
